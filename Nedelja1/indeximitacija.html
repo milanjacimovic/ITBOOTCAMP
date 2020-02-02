@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sajtimitacija.css">
+    <title>Imitacija sajta</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li class="odvojenili"><a> About</a></li>
+                    <li class="odvojenili"><a>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="prviDiv">
+            <h1>Dobrodosli u projekciju</h1>
+            <button>HAJMO POCET</button>
+        </div>
+        <div id="drugiDiv">
+            <img class="slike"
+                src="data:image/png;base64,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" />
+            <h2>Ovo je sad neki telefon</h2>
+            <p>Ovo je sad jedan jako dugacak i komplikovan tekst na latinskom, ko razume shvatice.</p>
+            <button>NAUCI ME JOS</button>
+        </div>
+
+        <div id="treciDiv">
+            <img class="slike"
+                src="https://static.bhphoto.com/images/images500x500/1234956669_605248.jpg" />
+            <h2>Ovo je sad neki fotoaparat</h2>
+            <p>Ovo je sad jedan jako dugacak i komplikovan tekst na latinskom, ko razume shvatice.</p>
+            <button>NAUCI ME JOS</button>
+        </div>
+
+        <div style="clear: both;"></div>
+
+        <div id="cetvrtiDiv">
+            <h3>Pusti mi poruku</h3>
+            <form>
+                <label>Ime: </label> <input placeholder="Tvoje ime...">
+                <label> Email:</label> <input placeholder="Tvoj mail...">
+            </form>
+            <form>
+                <label>Poruka za mene: </label> <input placeholder="Tvoj komentar..." id="lastInput">
+            </form>
+            <button id="sendBtn">SALJI PORUKU</button>
+        </div>
+
+    </main>
+</body>
+
+</html>

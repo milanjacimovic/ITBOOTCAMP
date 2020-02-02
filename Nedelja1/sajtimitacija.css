@@ -1,0 +1,130 @@
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    display:flex;
+  }
+  header * {
+    display: inline;
+  }
+  .odvojenili {
+    margin-left: 20px;
+  }
+  header li {
+    
+    text-decoration: none;
+    color: black;  
+  }
+    header li a{
+    text-decoration: none;
+    color: black;
+  }
+
+  body {
+    padding: 30px;
+  }
+
+ .slike{
+    border-radius: 100%;
+    height:150%;
+    width:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
+ }
+
+  #prviDiv {
+      background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/01/25/237391/838b5a24089387e350bcbfe99e834549-700.jpg);
+      background-size: cover;
+      color:white;
+      height:200px;
+      padding-top:100px;
+
+  }
+
+  #drugiDiv{
+        border-radius: 10px;
+        height:10%;
+        width:20%;
+        float:left;
+        clear:left,right;
+
+        margin-right: 40px;
+        padding-left: 120px;
+        padding-top:50px;
+        text-align: center;
+        background-color: white;
+
+      }
+
+   #treciDiv{
+        border-radius: 10px;
+        height:10%;
+        width:20%;
+        float:right;
+        clear:left,right;
+        margin-left: 40px;
+        padding-right: 120px;
+        padding-top:50px;
+        padding-bottom: 20px;
+        text-align: center;
+        background-color: white;
+      }
+  
+  #cetvrtiDiv{
+        padding-top: 10px;
+        height:220px;
+        background-color: rgb(60, 179, 113);
+     }
+  
+  h1, h2{
+      text-align:center ;
+  }
+
+  h3{
+    text-align:center ;
+    color:white;
+  }
+
+  button{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 50px;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #86ec93;
+    border: 2px solid #86ec93;
+    background-color: transparent;
+  }
+
+  #sendBtn{
+    margin-top: 0.5cm;
+    color: white;
+    border:2px solid white;
+    font-size: 10px;
+  }
+
+  input{
+      
+    display:inline-block;
+    width:45%;
+    margin-bottom: 5px;
+    
+  }
+
+  #lastInput{
+      margin-top: 5px;
+    padding-bottom: 20px;
+    width:99%;
+  }
+ 
+
+  
