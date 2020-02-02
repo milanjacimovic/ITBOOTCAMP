@@ -1,0 +1,49 @@
+.transparent_btn {
+	display: inline-block;
+	padding: 10px 14px;
+	color: #86ec93;
+	border: 2px solid #86ec93;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 80%;
+	background-color: rgba(255,255,255, 0);
+	border-radius: 25px;
+        
+}
+
+.slika {
+    border-radius: 50%;
+}
+
+
+#sivo {
+    text-align: center;
+    height: 400px;
+    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/01/25/237391/838b5a24089387e350bcbfe99e834549-700.jpg");
+    background-size: cover; 
+    
+}
+h1 {
+    line-height: 250px;
+  height: 250px;    
+    text-align: center;
+    color:white
+}
+
+
+#belolevo {
+    background-color: white;
+    float: left;
+    text-align: center;    
+}
+#belodesno {
+    background-color: white;
+    float: right;
+    text-align: center;
+    }
+}
+
+#footer {
+    background-color:#98e7b7  ;
+    clear: both;
+}
