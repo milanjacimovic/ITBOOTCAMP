@@ -40,12 +40,12 @@ dugmeNaruciOdmah2.addEventListener('click', (a) => {
 
 function getNowDateInFormat() {
     let datum = new Date();
-    return `${datum.getDate()}.${datum.getMonth() + 1}.${datum.getFullYear()}.`
+    return `${dodajNulu(datum.getDate())}.${dodajNulu(datum.getMonth() + 1)}.${datum.getFullYear()}.`
 }
 
 function getNowTimeInFormat() {
     let vreme = new Date();
-    return `${vreme.getHours()}:${vreme.getMinutes()}:${vreme.getSeconds()}`
+    return `${dodajNulu(vreme.getHours())}:${dodajNulu(vreme.getMinutes())}:${dodajNulu(vreme.getSeconds())}`
 }
 
 
@@ -57,3 +57,9 @@ function greska() {
     document.getElementById("Poruka").innerHTML = 'Ups! Morate izabrati nesto! ' + `${getNowDateInFormat()} ${getNowTimeInFormat()}`
 }
 
+function dodajNulu(broj) {
+    if (broj < 10) {
+      broj = '0' + broj
+    }
+    return broj;
+  }
