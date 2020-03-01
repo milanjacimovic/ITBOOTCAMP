@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Banka</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id=ukupno>
+            <H1>Dostupan budzet u Martu 2020:</H1>
+            <div id="saldo">0</div>
+            <div id="trenutno-stanje">
+                <div id="trenutno-prihodi">
+                    <p>Prihod:</p>
+                    <p>+</p>
+                </div>
+                <div id="trenutno-rashodi">
+                    <p>Rashod:</p>
+                    <p>-</p>
+                </div>
+            </div>
+        </div>
+        <div id="unos">
+            <form action="">
+                <select name="vrsta" id="vrsta-promene">
+                    <option value="prihod">+</option>
+                    <option value="rashod">-</option>
+                </select>
+                <input type="text" name="" id="opis-promene" placeholder="opis">
+                <input type="number" name="" id="iznos-promene" placeholder="iznos">
+                <button type="submit" id="dugme-unos">POTVRDI PROMENU</button>
+            </form>
+        </div>
+        <div id="prikaz">
+            <div id="prikaz-prihodi">
+                <h3>PRIHODI</h3>
+                <div id="prikaz-prihoda">
+                    <!-- <p>OPIS</p> <P>IZNOS</P> -->
+                </div>
+            </div>
+            <div id="prikaz-rashodi">
+                <h3>RASHODI</h3>
+                <div id="prikaz-rashoda">
+                    <!-- <p>OPIS</p> <P>IZNOS</P> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1 {
+    margin:0;
+    }
+  
+    
+#ukupno{
+    
+    background-image: linear-gradient(to top, #93a5cf 0%, #e4efe9 100%);
+}
+#unos{
+    background-color: #F7F7F7;
+}
+#prikaz{
+    display: flex;
+    justify-content: space-between;
+}
+#prikaz-prihodi{
+    width: 45%;
+   
+}
+#prikaz-rashodi{
+    width: 45%;
+ 
+}
+#prikaz-prihoda{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#prikaz-rashoda{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#dugme-unos, #dugme-brisanje {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ed3330;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    }
+    /* #dugme-brisanje {
+        visibility: hidden;
+    } */
