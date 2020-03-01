@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 h1 {
     margin:0;
@@ -16,11 +17,12 @@ h1 {
     background-image: linear-gradient(to top, #93a5cf 0%, #e4efe9 100%);
 }
 #unos{
-    background-color: #F7F7F7;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 #prikaz{
     display: flex;
     justify-content: space-between;
+    
 }
 #prikaz-prihodi{
     width: 45%;
@@ -71,3 +73,5 @@ border-radius: 10px 10px 10px 10px;
     #trenutno-rashodi{
         background-color: red
     }
+
+  
