@@ -42,22 +42,22 @@ dugmeUnos.addEventListener('click', (e) => {
 const dodajPrihod = (opis, iznos) => {
     prihod += iznos;
     budzet += iznos;
-    globProcenat = rashod / budzet * 100;
+    globProcenat = rashod / prihod * 100;
     let ispis = document.createElement('div')
     ispis.id = "prikaz-prihoda";
-    onHover(ispis)
+    // onHover(ispis)
     ispis.innerHTML = `${opis} ${iznos}`
     prikazPrihoda.appendChild(ispis)
     ukupno.innerHTML=renderujHTML(budzet, prihod, rashod, Math.floor(globProcenat))
     let obrisiPromenu = document.createElement('button');
     obrisiPromenu.innerHTML = 'OBRISI';
     obrisiPromenu.id="dugme-brisanje"
-    obrisiPromenu.style.display= 'none'
+    // obrisiPromenu.style.display= 'none'
     ispis.appendChild(obrisiPromenu);
     obrisiPromenu.addEventListener('click', () => {
         budzet -= iznos;
         prihod -= iznos;
-        globProcenat = rashod / budzet * 100;
+        globProcenat = rashod / prihod * 100;
         ukupno.innerHTML=renderujHTML(budzet, prihod, rashod, Math.floor(globProcenat))
         ispis.remove();
 
@@ -70,23 +70,23 @@ const dodajRashod = (opis, iznos, budzet) => {
     rashod += iznos;
     procenat = iznos / budzet * 100;
     budzet -= iznos;
-    globProcenat = rashod / budzet * 100
+    globProcenat = rashod / prihod * 100
     let ispis = document.createElement('div')
     ispis.id = "prikaz-rashoda";
-    onHover(ispis)
+    // onHover(ispis)
     ispis.innerHTML = `${opis} Iznosi: ${iznos} I to je: ${Math.floor(procenat)}%`
     prikazRashoda.appendChild(ispis)
     ukupno.innerHTML=renderujHTML(budzet, prihod, rashod, Math.floor(globProcenat))
     let obrisiPromenu = document.createElement('button');
     obrisiPromenu.innerHTML = 'OBRISI';
     obrisiPromenu.id="dugme-brisanje"
-    obrisiPromenu.style.display= 'none'
+    // obrisiPromenu.style.display= 'none'
     ispis.appendChild(obrisiPromenu);
     obrisiPromenu.addEventListener('click', () => {
         budzet += iznos;
         rashod -= iznos;
         procenat=iznos/budzet*100
-        globProcenat = rashod / budzet * 100;
+        globProcenat = rashod / prihod * 100;
         ukupno.innerHTML=renderujHTML(budzet, prihod, rashod, Math.floor(globProcenat))
         ispis.remove();
     })
@@ -94,17 +94,17 @@ const dodajRashod = (opis, iznos, budzet) => {
     procenat=0;
 }
 
-const onHover=(element) =>{
-    element.addEventListener('mouseover', (e) => {
-      document.querySelector('#dugme-brisanje').style.display = 'block';
-    });
-    element.addEventListener('mouseleave', (e) => {
-      document.querySelector('#dugme-brisanje').style.display='none';
-    });
-  }
+// const onHover=(element) =>{
+//     element.addEventListener('mouseover', (e) => {
+//       document.querySelector('#dugme-brisanje').style.display = 'block';
+//     });
+//     element.addEventListener('mouseleave', (e) => {
+//       document.querySelector('#dugme-brisanje').style.display='none';
+//     });
+//   }
 const renderujHTML = (budzet, prihod, rashod, procenat) => {
 return `<H1>Dostupan budzet u Martu 2020:</H1>
-<div id="saldo">${budzet}</div>
+<div id="saldo">${prihod-rashod}</div>
 <div id="trenutno-stanje">
     <div id="trenutno-prihodi">
         <p>Prihod:</p>
@@ -116,4 +116,3 @@ return `<H1>Dostupan budzet u Martu 2020:</H1>
     </div>
 </div>`
 }
-
