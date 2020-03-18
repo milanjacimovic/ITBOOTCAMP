@@ -9,6 +9,7 @@ class Forma extends React.Component {
             ime: '',
             broj: '',
             kontakti: [],
+            filtriraniKontakti: [],
             poruka: ''
         }
     }
@@ -55,7 +56,7 @@ class Forma extends React.Component {
     inputFilter(e) {
         let filtrirani = this.state.kontakti.filter((kontakt) => kontakt.ime.includes(e.target.value));
         this.setState({
-            kontakti: filtrirani
+            filtriraniKontakti: filtrirani
         })
        
         
@@ -79,6 +80,12 @@ class Forma extends React.Component {
                     </>
                 </div>
                 <input type="text" onChange={(e) => this.inputFilter(e)} placeholder="Pronadji kontakt"></input>
+                <div>
+                    <>
+                        <h3>Pronadjeni kontakti:</h3>
+                        <Kontakti kontakti={this.state.filtriraniKontakti}></Kontakti>
+                    </>
+                </div>
             </>
         )
     }
