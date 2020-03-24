@@ -1,0 +1,36 @@
+#container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-auto-rows: 25px; */
+    /* grid-row: 25px; */
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+}
+
+#topDiv{
+    
+    text-align: center;
+}
+
+button {
+    border-radius: 50%;
+    height:50px;
+	width: 150px;
+	border-color: #f2d53c;
+	background: khaki;
+    color: #f2d53c;
+    font:sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.naslov{
+    text-align: center;
+    color: #f2d53c;
+}
+
+.dugmence{
+    color: blue;
+}

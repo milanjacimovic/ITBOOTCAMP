@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: 'Aclonica';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://img.freepik.com/free-vector/3d-illustration-cloud-server_1302-14965.jpg?size=626&ext=jpg');
+background-size: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
